@@ -19,10 +19,13 @@ class Krp_packageModuleSite extends WeModuleSite {
     }
 
     public function doMobileIndex() {
+        global $_W;
+
         echo 'index';
     }
 
     public function doMobilePlay() {
+        global $_GPC;
         echo 'index';
     }
 
