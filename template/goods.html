@@ -1,0 +1,108 @@
+{template 'common/header'}
+
+<table class="table table-bordered">
+    <caption><h2>商品列表</h2></caption><button class="btn" data-toggle="modal" id="modalid" >添加商品</button>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>图片</th>
+        <th>库存</th>
+        <th>中奖概率</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {loop $list $v}
+    <tr>
+        <td>{$v['name']}</td>
+        <td><img src="{php echo tomedia($v['imgurl'])}" style="width: 80px;height: 80px"></td>
+        <td>{$v['kucun']}</td>
+        <td>{$v['probability']}%</td>
+        <td>
+            <button class="btn" data-toggle="modal" data-id="{$v['id']}" data-name="{$v['name']}" data-imgurl="{php echo tomedia($v['imgurl'])}" data-kucun="{$v['kucun']}" data-probability="{$v['probability']}" id="modalid2" >修改</button>
+            &nbsp;<button class="btn" onclick="if(confirm('是否删除？')){ location.href='{php echo $this->createWebUrl('delgood',array('id'=>$v['id']))}'}" >删除</button>
+        </td>
+    </tr>
+    {/loop}
+    </tbody>
+</table>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">×
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+
+                </h4>
+            </div>
+            <form action="" method="post" role="form" style="margin-left: 28px;margin-right: 28px;" >
+                <input type="hidden" name="id" value="">
+                <div class="form-group">
+                    <label for="name">名称</label>
+                    <input type="text" class="form-control" name="name" placeholder="请输入名称">
+                </div>
+                <div class="form-group">
+                    <label for="name">商品图</label>
+                    {php echo tpl_form_field_image('imgurl','')}
+                </div>
+                <div class="form-group">
+                    <label for="name">库存</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="kucun" placeholder="请输入库存（整数）">
+                        <span class="input-group-addon">个</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">中奖几率</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="probability" placeholder="请输入几率">
+                        <span class="input-group-addon">%</span>
+                    </div>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                    关闭
+                </button>
+                <button type="button" class="btn btn-primary" id="submit">
+                    提交更改
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+//    $(function () { $('#myModal').modal('hide')});
+</script>
+<script>
+    $("#modalid").click(function() {
+        $("#myModalLabel").html('添加商品');
+        $(':input').val('');
+        $("form img")[0].src="./resource/images/nopic.jpg";
+        $("#myModal").modal();
+    });
+
+    $("#modalid2").click(function() {
+        $("#myModalLabel").html('修改商品');
+        $("input[name='id']").val($(this).attr("data-id"));
+        $("input[name='name']").val($(this).attr("data-name"));
+        $("input[name='imgurl']").val($(this).attr("data-imgurl"));
+        $("form img")[0].src=$(this).attr("data-imgurl");
+        $("input[name='kucun']").val($(this).attr("data-kucun"));
+        $("input[name='probability']").val($(this).attr("data-probability"));
+        $("#myModal").modal();
+    });
+    $("#submit").click(function() {
+       $("form")[0].submit();
+    });
+
+</script>
+
+{template 'common/footer'}

@@ -1,0 +1,60 @@
+{template 'common/header'}
+<form id="reply-form" class="form-horizontal form ng-pristine ng-valid" action="" method="post" >
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            活动设置
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-3 col-md-2 control-label">活动名称</label>
+                <div class="col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" name="actname" value="{$set['actname']}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-3 col-md-2 control-label">活动开始时间</label>
+                <div class="col-sm-6 col-xs-12">
+                    {php echo tpl_form_field_date('starttime',date('Y-m-d H:i:s',$set['starttime']),true);}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-3 col-md-2 control-label">活动结束时间</label>
+                <div class="col-sm-6 col-xs-12">
+                    {php echo tpl_form_field_date('endtime',date('Y-m-d H:i:s',$set['endtime']),true);}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-3 col-md-2 control-label">每人每天最多中奖次数</label>
+                <div class="col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" name="opportunity" value="{$set['opportunity']}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-3 col-md-2 control-label">每个场景最少红包数</label>
+                <div class="col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" name="roundmin" value="{$set['roundmin']}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-3 col-md-2 control-label">每个场景最多红包数</label>
+                <div class="col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" name="roundmax" value="{$set['roundmax']}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-3 col-md-2 control-label">每个场景第几个红包中奖</label>
+                <div class="col-sm-6 col-xs-12">
+                    <input type="text" class="form-control" name="okgoodnum" value="{$set['okgoodnum']}">
+                </div>
+            </div>
+
+    <div class="form-group">
+        <div class="col-sm-12">
+            <input name="submit" type="submit" value="保存" class="btn btn-primary">
+            <input type="hidden" name="token" value="{$_W['token']}">
+        </div>
+    </div>
+        </div>
+    </div>
+</form>
+{template 'common/footer'}

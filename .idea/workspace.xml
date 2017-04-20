@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0f85267-9936-46a3-9600-0ef5f466692e" name="默认的" comment="" />
+    <list default="true" id="f0f85267-9936-46a3-9600-0ef5f466692e" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/goods.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/mysetting.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/krp_package" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site.php" afterPath="$PROJECT_DIR$/site.php" />
+    </list>
     <ignored path="krp_package.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,24 +31,54 @@
       <file leaf-file-name="manifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.21875">
-              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+            <state vertical-scroll-proportion="-16.035715">
+              <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50292397">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state vertical-scroll-proportion="-22.857143">
+              <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/goods.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4375703">
+              <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysetting.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/mysetting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.607143">
+              <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,7 +88,10 @@
       <list>
         <option value="$PROJECT_DIR$/template/setting.html" />
         <option value="$PROJECT_DIR$/manifest.xml" />
+        <option value="$PROJECT_DIR$/template/mysetting.html" />
         <option value="$PROJECT_DIR$/site.php" />
+        <option value="$PROJECT_DIR$/../../data/config.php" />
+        <option value="$PROJECT_DIR$/template/goods.html" />
       </list>
     </option>
   </component>
@@ -61,12 +100,15 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -81,7 +123,7 @@
     <OptionsSetting value="true" id="更新" />
     <OptionsSetting value="true" id="状态" />
     <OptionsSetting value="true" id="编辑" />
-    <ConfirmationsSetting value="0" id="添加" />
+    <ConfirmationsSetting value="2" id="添加" />
     <ConfirmationsSetting value="0" id="移除" />
   </component>
   <component name="ProjectView">
@@ -99,8 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -119,17 +159,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="krp_package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="krp_package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xg_agent" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XAMPP\htdocs\weengine\addons\krp_package\template" />
+      <recent name="D:\XAMPP\htdocs\weengine\addons\krp_package\template\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f0f85267-9936-46a3-9600-0ef5f466692e" name="默认的" comment="" />
@@ -140,10 +231,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13385417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -161,6 +252,33 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13385417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -186,24 +304,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/setting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029239766">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/receiver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.21875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
           <folding />
         </state>
@@ -211,9 +314,170 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50292397">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/receiver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.035715">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mysetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.607143">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/yangchong1994_01/0杨翀文件夹/0杨翀文件夹-全民经纪人/hc_deluxejjr/web/question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6647919">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <marker date="1467094444775" expanded="true" signature="371:489" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_question')}..." />
+            <marker date="1467094444775" expanded="true" signature="645:718" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_question')}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/yangchong1994_01/0杨翀文件夹/0杨翀文件夹-全民经纪人/hc_deluxejjr/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3329453">
+          <caret line="5378" column="47" selection-start-line="5378" selection-start-column="44" selection-end-line="5378" selection-end-column="47" />
+          <folding>
+            <marker date="1467094416046" expanded="true" signature="994:1069" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_rule')}..." />
+            <marker date="1467094416046" expanded="true" signature="1619:1800" placeholder="select * fro..${tablename('hc_deluxejjr_assistant')}..." />
+            <marker date="1467094416046" expanded="true" signature="1860:2041" placeholder="select * fro..${tablename('hc_deluxejjr_assistant')}..." />
+            <marker date="1467094416046" expanded="true" signature="2069:2192" placeholder="select * fro..${tablename('hc_deluxejjr_acmanager')}..." />
+            <marker date="1467094416046" expanded="true" signature="2282:2406" placeholder="select * fro..${tablename('hc_deluxejjr_promanager')}..." />
+            <marker date="1467094416046" expanded="true" signature="5856:5959" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_identity')}..." />
+            <marker date="1467094416046" expanded="true" signature="6404:6506" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_jjrcode')}..." />
+            <marker date="1467094416046" expanded="true" signature="6998:7090" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_identity')}..." />
+            <marker date="1467094416046" expanded="true" signature="8342:8433" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_jjrcode')}..." />
+            <marker date="1467094416046" expanded="true" signature="11466:11531" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="11926:12031" placeholder="select * fro..${tablename('hc_deluxejjr_identity')}..." />
+            <marker date="1467094416046" expanded="true" signature="12084:12175" placeholder="select * fro..${tablename('hc_deluxejjr_idcommission')}..." />
+            <marker date="1467094416046" expanded="true" signature="15393:15553" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="15594:15685" placeholder="SELECT COUNT..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="15845:15920" placeholder="SELECT COUNT..${tablename('hc_deluxejjr_photo')}..." />
+            <marker date="1467094416046" expanded="true" signature="16149:16221" placeholder="SELECT id, t..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="18393:18488" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_photo')}..." />
+            <marker date="1467094416046" expanded="true" signature="18599:18672" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_item')}..." />
+            <marker date="1467094416046" expanded="true" signature="18928:18992" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_photo')}..." />
+            <marker date="1467094416046" expanded="true" signature="19324:19397" placeholder="SELECT id, t..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="19517:19598" placeholder="SELECT id, a..${tablename('hc_deluxejjr_photo')}..." />
+            <marker date="1467094416046" expanded="true" signature="20115:20180" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="21481:21607" placeholder="SELECT cid,s..${tablename('hc_deluxejjr_commission')}..." />
+            <marker date="1467094416046" expanded="true" signature="21905:21989" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="22714:22841" placeholder="SELECT cid, ..${tablename('hc_deluxejjr_commission')}..." />
+            <marker date="1467094416046" expanded="true" signature="23206:23345" placeholder="SELECT id, o..." />
+            <marker date="1467094416046" expanded="true" signature="24474:24613" placeholder="SELECT id, o..." />
+            <marker date="1467094416046" expanded="true" signature="24963:25089" placeholder="SELECT cid,s..${tablename('hc_deluxejjr_commission')}..." />
+            <marker date="1467094416046" expanded="true" signature="26686:26816" placeholder="SELECT id, o..${tablename('hc_deluxejjr_member')}..." />
+            <marker date="1467094416046" expanded="true" signature="27205:27293" placeholder="select statu..${tablename('hc_deluxejjr_credit')}..." />
+            <marker date="1467094416046" expanded="true" signature="27333:27480" placeholder="select conte..${tablename('hc_deluxejjr_creditlog')}..." />
+            <marker date="1467094416046" expanded="true" signature="28131:28215" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="28978:29062" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="30486:30556" placeholder="select stacr..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="30613:30723" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_customerstatus')}..." />
+            <marker date="1467094416046" expanded="true" signature="31686:31802" placeholder="select uid f..${tablename('mc_mapping_fans')}..." />
+            <marker date="1467094416046" expanded="true" signature="39546:39630" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="39704:39846" placeholder="select * fro..${tablename('hc_deluxejjr_commission')}where..." />
+            <marker date="1467094416046" expanded="true" signature="39879:39993" placeholder="select * fro..${tablename('hc_deluxejjr_credit')}where..." />
+            <marker date="1467094416046" expanded="true" signature="41428:41521" placeholder="select * fro..${tablename('hc_deluxejjr_cusmatlog')}..." />
+            <marker date="1467094416046" expanded="true" signature="42905:42998" placeholder="select * fro..${tablename('hc_deluxejjr_cusmatlog')}..." />
+            <marker date="1467094416046" expanded="true" signature="44545:44607" placeholder="select * fro..${tablename('hc_deluxejjr_member')}..." />
+            <marker date="1467094416046" expanded="true" signature="44893:44983" placeholder="select * fro..${tablename('hc_deluxejjr_commission')}..." />
+            <marker date="1467094416046" expanded="true" signature="45273:45335" placeholder="select * fro..${tablename('hc_deluxejjr_member')}..." />
+            <marker date="1467094416046" expanded="true" signature="45879:45950" placeholder="select commi..${tablename('hc_deluxejjr_member')}..." />
+            <marker date="1467094416046" expanded="true" signature="47514:47608" placeholder="SELECT id,id..${tablename('hc_deluxejjr_identity')}..." />
+            <marker date="1467094416046" expanded="true" signature="49219:49313" placeholder="SELECT id,id..${tablename('hc_deluxejjr_identity')}..." />
+            <marker date="1467094416046" expanded="true" signature="50140:50292" placeholder="SELECT tid, ..${tablename('hc_deluxejjr_commission')}..." />
+            <marker date="1467094416046" expanded="true" signature="50980:51120" placeholder="SELECT mid, ..${tablename('hc_deluxejjr_commission')}..." />
+            <marker date="1467094416046" expanded="true" signature="51712:51852" placeholder="SELECT mid, ..${tablename('hc_deluxejjr_commission')}..." />
+            <marker date="1467094416046" expanded="true" signature="52470:52544" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_rule')}..." />
+            <marker date="1467094416046" expanded="true" signature="52608:52718" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_customerstatus')}..." />
+            <marker date="1467094416046" expanded="true" signature="54798:54882" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="55974:55989" placeholder="..." />
+            <marker date="1467094416046" expanded="true" signature="60863:60967" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_counselor')}..." />
+            <marker date="1467094416046" expanded="true" signature="61458:61551" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_counselor')}..." />
+            <marker date="1467094416046" expanded="true" signature="61702:61777" placeholder="select id, t..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="62962:63086" placeholder="select id, l..${tablename('hc_deluxejjr_assistant')}..." />
+            <marker date="1467094416046" expanded="true" signature="64771:64875" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_acmanager')}..." />
+            <marker date="1467094416046" expanded="true" signature="65365:65458" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_acmanager')}..." />
+            <marker date="1467094416046" expanded="true" signature="67356:67456" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="71887:71969" placeholder="select id, o..${tablename('hc_deluxejjr_customer')}..." />
+            <marker date="1467094416046" expanded="true" signature="72180:72265" placeholder="SELECT id, t..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="72421:72528" placeholder="select openi..${tablename('hc_deluxejjr_assistant')}..." />
+            <marker date="1467094416046" expanded="true" signature="75768:75868" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="76903:77016" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_adv')}..." />
+            <marker date="1467094416046" expanded="true" signature="78015:78108" placeholder="select * fro..${tablename('hc_deluxejjr_adv')}..." />
+            <marker date="1467094416046" expanded="true" signature="78279:78385" placeholder="SELECT id FR..${tablename('hc_deluxejjr_adv')}..." />
+            <marker date="1467094416046" expanded="true" signature="79064:79128" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_photo')}..." />
+            <marker date="1467094416046" expanded="true" signature="79262:79325" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_item')}..." />
+            <marker date="1467094416046" expanded="true" signature="79557:79660" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="80144:80228" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
+            <marker date="1467094416046" expanded="true" signature="82570:82681" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_customerstatus')}..." />
+            <marker date="1467094416046" expanded="true" signature="85469:85571" placeholder="select * fro..${tablename('mc_mapping_fans')}..." />
+            <marker date="1467094416046" expanded="true" signature="86845:86937" placeholder="SELECT group..${tablename('mc_groups')}..." />
+            <marker date="1467094416046" expanded="true" signature="94994:95078" placeholder="select Statu..${tablename('hc_deluxejjr_templatenews')}..." />
+            <marker date="1467094416046" expanded="true" signature="95870:95933" placeholder="select * fro..${tablename('account_wechats')}..." />
+            <marker date="1467094416046" expanded="true" signature="96445:96527" placeholder="select Commi..${tablename('hc_deluxejjr_templatenews')}..." />
+            <marker date="1467094416046" expanded="true" signature="97502:97565" placeholder="select * fro..${tablename('account_wechats')}..." />
+            <marker date="1467094416046" expanded="true" signature="98001:98085" placeholder="select Credi..${tablename('hc_deluxejjr_templatenews')}..." />
+            <marker date="1467094416046" expanded="true" signature="98677:98740" placeholder="select * fro..${tablename('account_wechats')}..." />
+            <marker date="1467094416046" expanded="true" signature="99174:99256" placeholder="select Custo..${tablename('hc_deluxejjr_templatenews')}..." />
+            <marker date="1467094416046" expanded="true" signature="99869:99932" placeholder="select * fro..${tablename('account_wechats')}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../data/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46906638">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.857143">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4375703">
+          <caret line="87" column="59" selection-start-line="87" selection-start-column="59" selection-end-line="87" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
