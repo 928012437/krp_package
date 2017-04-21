@@ -1,7 +1,7 @@
 {template 'common/header'}
 
 <table class="table table-bordered">
-    <caption><h2>商品列表</h2></caption><button class="btn" data-toggle="modal" id="modalid" >添加商品</button>
+    <caption><h2>奖品列表</h2></caption><button class="btn" data-toggle="modal" id="modalid" >添加奖品</button>
     <thead>
     <tr>
         <th>名称</th>
@@ -19,13 +19,14 @@
         <td>{$v['kucun']}</td>
         <td>{$v['probability']}%</td>
         <td>
-            <button class="btn" data-toggle="modal" data-id="{$v['id']}" data-name="{$v['name']}" data-imgurl="{php echo tomedia($v['imgurl'])}" data-kucun="{$v['kucun']}" data-probability="{$v['probability']}" id="modalid2" >修改</button>
+            <button class="btn" data-toggle="modal" data-id="{$v['id']}" data-name="{$v['name']}" data-imgurl="{php echo tomedia($v['imgurl'])}" data-kucun="{$v['kucun']}" data-probability="{$v['probability']}" onclick="modalid2(this)" >修改</button>
             &nbsp;<button class="btn" onclick="if(confirm('是否删除？')){ location.href='{php echo $this->createWebUrl('delgood',array('id'=>$v['id']))}'}" >删除</button>
         </td>
     </tr>
     {/loop}
     </tbody>
 </table>
+{$pager}
 
 <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
@@ -47,7 +48,7 @@
                     <input type="text" class="form-control" name="name" placeholder="请输入名称">
                 </div>
                 <div class="form-group">
-                    <label for="name">商品图</label>
+                    <label for="name">奖品图</label>
                     {php echo tpl_form_field_image('imgurl','')}
                 </div>
                 <div class="form-group">
@@ -83,22 +84,22 @@
 </script>
 <script>
     $("#modalid").click(function() {
-        $("#myModalLabel").html('添加商品');
+        $("#myModalLabel").html('添加奖品');
         $(':input').val('');
         $("form img")[0].src="./resource/images/nopic.jpg";
         $("#myModal").modal();
     });
 
-    $("#modalid2").click(function() {
-        $("#myModalLabel").html('修改商品');
-        $("input[name='id']").val($(this).attr("data-id"));
-        $("input[name='name']").val($(this).attr("data-name"));
-        $("input[name='imgurl']").val($(this).attr("data-imgurl"));
-        $("form img")[0].src=$(this).attr("data-imgurl");
-        $("input[name='kucun']").val($(this).attr("data-kucun"));
-        $("input[name='probability']").val($(this).attr("data-probability"));
+    function modalid2 (obj) {
+        $("#myModalLabel").html('修改奖品');
+        $("input[name='id']").val($(obj).attr("data-id"));
+        $("input[name='name']").val($(obj).attr("data-name"));
+        $("input[name='imgurl']").val($(obj).attr("data-imgurl"));
+        $("form img")[0].src=$(obj).attr("data-imgurl");
+        $("input[name='kucun']").val($(obj).attr("data-kucun"));
+        $("input[name='probability']").val($(obj).attr("data-probability"));
         $("#myModal").modal();
-    });
+    }
     $("#submit").click(function() {
        $("form")[0].submit();
     });

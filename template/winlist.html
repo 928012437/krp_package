@@ -1,0 +1,38 @@
+{template 'common/header'}
+
+<table class="table table-bordered">
+    <caption><h2>获奖名单</h2></caption><button class="btn" onclick="location.href='{php echo  $this->createWebUrl('winlist',array('excel'=>1))}'" >导出Excel</button>
+    <thead>
+    <tr>
+        <th>openid</th>
+        <th>昵称</th>
+        <th>头像</th>
+        <th>手机号</th>
+        <th>真实姓名</th>
+        <th>奖品名</th>
+        <th>奖品图片</th>
+        <th>获奖时间</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    {loop $list $v}
+    <tr>
+        <td>{$v['openid']}</td>
+        <td>{$v['nickname']}</td>
+        <td><img src="{$v['headimgurl']}" style="width: 80px;height: 80px"></td>
+        <td>{$v['tel']}</td>
+        <td>{$v['name']}</td>
+        <td>{$v['goodname']}</td>
+        <td><img src="{$v['goodimgurl']}" style="width: 80px;height: 80px"></td>
+        <td style="white-space: inherit;">{$v['time']}</td>
+        <td>
+            <button class="btn" onclick="if(confirm('是否删除？')){ location.href='{php echo $this->createWebUrl('delwinuser',array('id'=>$v['id']))}'}" >删除</button>
+        </td>
+    </tr>
+    {/loop}
+    </tbody>
+</table>
+{$pager}
+
+{template 'common/footer'}
