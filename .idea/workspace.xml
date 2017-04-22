@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0f85267-9936-46a3-9600-0ef5f466692e" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/userlist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/winlist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site.php" afterPath="$PROJECT_DIR$/site.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/goods.html" afterPath="$PROJECT_DIR$/template/goods.html" />
     </list>
     <ignored path="krp_package.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,36 +27,37 @@
       <file leaf-file-name="manifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.035715">
+            <state vertical-scroll-proportion="-32.857143">
               <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.321428">
-              <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.57255346">
+              <caret line="220" column="21" selection-start-line="220" selection-start-column="21" selection-end-line="220" selection-end-column="21" />
               <folding>
-                <marker date="1492749270807" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
-                <marker date="1492749270807" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
-                <marker date="1492749270807" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
-                <marker date="1492749270807" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
-                <marker date="1492749270807" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
-                <marker date="1492749270807" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-                <marker date="1492749270807" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
-                <marker date="1492749270807" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
-                <marker date="1492749270807" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+                <marker date="1492825411115" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
+                <marker date="1492825411115" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
+                <marker date="1492825411115" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
+                <marker date="1492825411115" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
+                <marker date="1492825411115" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
+                <marker date="1492825411115" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+                <marker date="1492825411115" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
+                <marker date="1492825411115" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
+                <marker date="1492825411115" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+                <marker date="1492825411115" expanded="true" signature="9643:9746" placeholder="select * fro..${tablename(&quot;krp_package_winlist&quot;)}..." />
               </folding>
             </state>
           </provider>
@@ -69,7 +66,7 @@
       <file leaf-file-name="winlist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/winlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.571428">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
@@ -83,7 +80,7 @@
       <file leaf-file-name="userlist.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/userlist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.571428">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="54" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
@@ -92,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goods.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="goods.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/goods.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51222354">
-              <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+            <state vertical-scroll-proportion="-20.0">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -108,7 +105,7 @@
       <file leaf-file-name="mysetting.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/mysetting.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
               <folding />
             </state>
@@ -135,9 +132,10 @@
         <option value="$PROJECT_DIR$/template/mysetting.html" />
         <option value="$PROJECT_DIR$/template/userlist.html" />
         <option value="$PROJECT_DIR$/template/winlist.html" />
-        <option value="$PROJECT_DIR$/site.php" />
         <option value="$PROJECT_DIR$/../../data/config.php" />
         <option value="$PROJECT_DIR$/template/goods.html" />
+        <option value="$PROJECT_DIR$/site.php" />
+        <option value="$USER_HOME$/Downloads/we7.sql" />
       </list>
     </option>
   </component>
@@ -187,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,13 +219,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xg_agent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -282,7 +280,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13385417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -350,25 +348,102 @@
     <entry file="file://$PROJECT_DIR$/site.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
+          <folding>
+            <marker date="1492825411115" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
+            <marker date="1492825411115" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="9643:9746" placeholder="select * fro..${tablename(&quot;krp_package_winlist&quot;)}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/winlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/userlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="54" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/mysetting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
           <folding>
-            <marker date="1492749270807" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
-            <marker date="1492749270807" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
+            <marker date="1492825411115" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="9643:9746" placeholder="select * fro..${tablename(&quot;krp_package_winlist&quot;)}..." />
           </folding>
         </state>
       </provider>
@@ -405,23 +480,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1492749270807" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
-            <marker date="1492749270807" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
+            <marker date="1492825411115" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="9643:9746" placeholder="select * fro..${tablename(&quot;krp_package_winlist&quot;)}..." />
           </folding>
         </state>
       </provider>
@@ -439,23 +515,24 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1492749270807" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
-            <marker date="1492749270807" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
+            <marker date="1492825411115" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="9643:9746" placeholder="select * fro..${tablename(&quot;krp_package_winlist&quot;)}..." />
           </folding>
         </state>
       </provider>
@@ -483,7 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.035715">
+        <state vertical-scroll-proportion="-32.857143">
           <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
           <folding />
         </state>
@@ -491,7 +568,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/winlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.571428">
+        <state vertical-scroll-proportion="0.0">
           <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
@@ -503,7 +580,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/mysetting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.75">
+        <state vertical-scroll-proportion="0.0">
           <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
           <folding />
         </state>
@@ -511,7 +588,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/userlist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.571428">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="54" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#img#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
@@ -523,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4848144">
           <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,127 +607,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="124.7694">
           <caret line="5546" column="1" selection-start-line="5546" selection-start-column="1" selection-end-line="5546" selection-end-column="1" />
-          <folding>
-            <marker date="1467094416046" expanded="true" signature="994:1069" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_rule')}..." />
-            <marker date="1467094416046" expanded="true" signature="1619:1800" placeholder="select * fro..${tablename('hc_deluxejjr_assistant')}..." />
-            <marker date="1467094416046" expanded="true" signature="1860:2041" placeholder="select * fro..${tablename('hc_deluxejjr_assistant')}..." />
-            <marker date="1467094416046" expanded="true" signature="2069:2192" placeholder="select * fro..${tablename('hc_deluxejjr_acmanager')}..." />
-            <marker date="1467094416046" expanded="true" signature="2282:2406" placeholder="select * fro..${tablename('hc_deluxejjr_promanager')}..." />
-            <marker date="1467094416046" expanded="true" signature="5856:5959" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_identity')}..." />
-            <marker date="1467094416046" expanded="true" signature="6404:6506" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_jjrcode')}..." />
-            <marker date="1467094416046" expanded="true" signature="6998:7090" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_identity')}..." />
-            <marker date="1467094416046" expanded="true" signature="8342:8433" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_jjrcode')}..." />
-            <marker date="1467094416046" expanded="true" signature="11466:11531" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="11926:12031" placeholder="select * fro..${tablename('hc_deluxejjr_identity')}..." />
-            <marker date="1467094416046" expanded="true" signature="12084:12175" placeholder="select * fro..${tablename('hc_deluxejjr_idcommission')}..." />
-            <marker date="1467094416046" expanded="true" signature="15393:15553" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="15594:15685" placeholder="SELECT COUNT..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="15845:15920" placeholder="SELECT COUNT..${tablename('hc_deluxejjr_photo')}..." />
-            <marker date="1467094416046" expanded="true" signature="16149:16221" placeholder="SELECT id, t..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="18393:18488" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_photo')}..." />
-            <marker date="1467094416046" expanded="true" signature="18599:18672" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_item')}..." />
-            <marker date="1467094416046" expanded="true" signature="18928:18992" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_photo')}..." />
-            <marker date="1467094416046" expanded="true" signature="19324:19397" placeholder="SELECT id, t..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="19517:19598" placeholder="SELECT id, a..${tablename('hc_deluxejjr_photo')}..." />
-            <marker date="1467094416046" expanded="true" signature="20115:20180" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="21481:21607" placeholder="SELECT cid,s..${tablename('hc_deluxejjr_commission')}..." />
-            <marker date="1467094416046" expanded="true" signature="21905:21989" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="22714:22841" placeholder="SELECT cid, ..${tablename('hc_deluxejjr_commission')}..." />
-            <marker date="1467094416046" expanded="true" signature="23206:23345" placeholder="SELECT id, o..." />
-            <marker date="1467094416046" expanded="true" signature="24474:24613" placeholder="SELECT id, o..." />
-            <marker date="1467094416046" expanded="true" signature="24963:25089" placeholder="SELECT cid,s..${tablename('hc_deluxejjr_commission')}..." />
-            <marker date="1467094416046" expanded="true" signature="26686:26816" placeholder="SELECT id, o..${tablename('hc_deluxejjr_member')}..." />
-            <marker date="1467094416046" expanded="true" signature="27205:27293" placeholder="select statu..${tablename('hc_deluxejjr_credit')}..." />
-            <marker date="1467094416046" expanded="true" signature="27333:27480" placeholder="select conte..${tablename('hc_deluxejjr_creditlog')}..." />
-            <marker date="1467094416046" expanded="true" signature="28131:28215" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="28978:29062" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="30486:30556" placeholder="select stacr..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="30613:30723" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_customerstatus')}..." />
-            <marker date="1467094416046" expanded="true" signature="31686:31802" placeholder="select uid f..${tablename('mc_mapping_fans')}..." />
-            <marker date="1467094416046" expanded="true" signature="39546:39630" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="39704:39846" placeholder="select * fro..${tablename('hc_deluxejjr_commission')}where..." />
-            <marker date="1467094416046" expanded="true" signature="39879:39993" placeholder="select * fro..${tablename('hc_deluxejjr_credit')}where..." />
-            <marker date="1467094416046" expanded="true" signature="41428:41521" placeholder="select * fro..${tablename('hc_deluxejjr_cusmatlog')}..." />
-            <marker date="1467094416046" expanded="true" signature="42905:42998" placeholder="select * fro..${tablename('hc_deluxejjr_cusmatlog')}..." />
-            <marker date="1467094416046" expanded="true" signature="44545:44607" placeholder="select * fro..${tablename('hc_deluxejjr_member')}..." />
-            <marker date="1467094416046" expanded="true" signature="44893:44983" placeholder="select * fro..${tablename('hc_deluxejjr_commission')}..." />
-            <marker date="1467094416046" expanded="true" signature="45273:45335" placeholder="select * fro..${tablename('hc_deluxejjr_member')}..." />
-            <marker date="1467094416046" expanded="true" signature="45879:45950" placeholder="select commi..${tablename('hc_deluxejjr_member')}..." />
-            <marker date="1467094416046" expanded="true" signature="47514:47608" placeholder="SELECT id,id..${tablename('hc_deluxejjr_identity')}..." />
-            <marker date="1467094416046" expanded="true" signature="49219:49313" placeholder="SELECT id,id..${tablename('hc_deluxejjr_identity')}..." />
-            <marker date="1467094416046" expanded="true" signature="50140:50292" placeholder="SELECT tid, ..${tablename('hc_deluxejjr_commission')}..." />
-            <marker date="1467094416046" expanded="true" signature="50980:51120" placeholder="SELECT mid, ..${tablename('hc_deluxejjr_commission')}..." />
-            <marker date="1467094416046" expanded="true" signature="51712:51852" placeholder="SELECT mid, ..${tablename('hc_deluxejjr_commission')}..." />
-            <marker date="1467094416046" expanded="true" signature="52470:52544" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_rule')}..." />
-            <marker date="1467094416046" expanded="true" signature="52608:52718" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_customerstatus')}..." />
-            <marker date="1467094416046" expanded="true" signature="54798:54882" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="55974:55989" placeholder="..." />
-            <marker date="1467094416046" expanded="true" signature="60863:60967" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_counselor')}..." />
-            <marker date="1467094416046" expanded="true" signature="61458:61551" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_counselor')}..." />
-            <marker date="1467094416046" expanded="true" signature="61702:61777" placeholder="select id, t..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="62962:63086" placeholder="select id, l..${tablename('hc_deluxejjr_assistant')}..." />
-            <marker date="1467094416046" expanded="true" signature="64771:64875" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_acmanager')}..." />
-            <marker date="1467094416046" expanded="true" signature="65365:65458" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_acmanager')}..." />
-            <marker date="1467094416046" expanded="true" signature="67356:67456" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="71887:71969" placeholder="select id, o..${tablename('hc_deluxejjr_customer')}..." />
-            <marker date="1467094416046" expanded="true" signature="72180:72265" placeholder="SELECT id, t..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="72421:72528" placeholder="select openi..${tablename('hc_deluxejjr_assistant')}..." />
-            <marker date="1467094416046" expanded="true" signature="75768:75868" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="76903:77016" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_adv')}..." />
-            <marker date="1467094416046" expanded="true" signature="78015:78108" placeholder="select * fro..${tablename('hc_deluxejjr_adv')}..." />
-            <marker date="1467094416046" expanded="true" signature="78279:78385" placeholder="SELECT id FR..${tablename('hc_deluxejjr_adv')}..." />
-            <marker date="1467094416046" expanded="true" signature="79064:79128" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_photo')}..." />
-            <marker date="1467094416046" expanded="true" signature="79262:79325" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_item')}..." />
-            <marker date="1467094416046" expanded="true" signature="79557:79660" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="80144:80228" placeholder="SELECT id,ti..${tablename('hc_deluxejjr_loupan')}..." />
-            <marker date="1467094416046" expanded="true" signature="82570:82681" placeholder="SELECT * FRO..${tablename('hc_deluxejjr_customerstatus')}..." />
-            <marker date="1467094416046" expanded="true" signature="85469:85571" placeholder="select * fro..${tablename('mc_mapping_fans')}..." />
-            <marker date="1467094416046" expanded="true" signature="86845:86937" placeholder="SELECT group..${tablename('mc_groups')}..." />
-            <marker date="1467094416046" expanded="true" signature="94994:95078" placeholder="select Statu..${tablename('hc_deluxejjr_templatenews')}..." />
-            <marker date="1467094416046" expanded="true" signature="95870:95933" placeholder="select * fro..${tablename('account_wechats')}..." />
-            <marker date="1467094416046" expanded="true" signature="96445:96527" placeholder="select Commi..${tablename('hc_deluxejjr_templatenews')}..." />
-            <marker date="1467094416046" expanded="true" signature="97502:97565" placeholder="select * fro..${tablename('account_wechats')}..." />
-            <marker date="1467094416046" expanded="true" signature="98001:98085" placeholder="select Credi..${tablename('hc_deluxejjr_templatenews')}..." />
-            <marker date="1467094416046" expanded="true" signature="98677:98740" placeholder="select * fro..${tablename('account_wechats')}..." />
-            <marker date="1467094416046" expanded="true" signature="99174:99256" placeholder="select Custo..${tablename('hc_deluxejjr_templatenews')}..." />
-            <marker date="1467094416046" expanded="true" signature="99869:99932" placeholder="select * fro..${tablename('account_wechats')}..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.321428">
-          <caret line="155" column="5" selection-start-line="155" selection-start-column="5" selection-end-line="155" selection-end-column="5" />
-          <folding>
-            <marker date="1492749270807" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
-            <marker date="1492749270807" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
-            <marker date="1492749270807" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
-            <marker date="1492749270807" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/goods.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51222354">
-          <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+        <state vertical-scroll-proportion="-20.0">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#img#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/we7.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44134727">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57255346">
+          <caret line="220" column="21" selection-start-line="220" selection-start-column="21" selection-end-line="220" selection-end-column="21" />
+          <folding>
+            <marker date="1492825411115" expanded="true" signature="1701:1771" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1772" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1779" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1812" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:1822" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1701:2098" placeholder="select * fro..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1909" placeholder="SELECT count..${tablename('xg_agent_member')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1969" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="1888:1971" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3038" placeholder="select * fro..${tablename('krp_package_user',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3094" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3096" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3024:3137" placeholder="select * fro..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="3173:3254" placeholder="SELECT count..${tablename('krp_package_good')}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4369" placeholder="select * fro..${tablename('krp_package_winlist',array('uniacid'=&gt;$uniacid))}..." />
+            <marker date="1492825411115" expanded="true" signature="4355:4430" placeholder="select * fro..${tablename('krp_package_winlist')}..." />
+            <marker date="1492825411115" expanded="true" signature="4506:4590" placeholder="SELECT count..${tablename('krp_package_user')}..." />
+            <marker date="1492825411115" expanded="true" signature="9643:9746" placeholder="select * fro..${tablename(&quot;krp_package_winlist&quot;)}..." />
           </folding>
         </state>
       </provider>

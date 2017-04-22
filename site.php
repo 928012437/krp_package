@@ -210,8 +210,10 @@ class Krp_packageModuleSite extends WeModuleSite
     public function doMobileIndex()
     {
         global $_W;
+        $uniacid = $_W['uniacid'];
+        $set=pdo_get('krp_package_set',array('uniacid'=>$uniacid));
 
-        echo 'index';
+        include $this->template("index");
     }
 
     public function doMobilePlay()
@@ -222,7 +224,11 @@ class Krp_packageModuleSite extends WeModuleSite
 
     public function doMobileWinlist()
     {
-        echo 'index';
+        global $_W;
+        $uniacid = $_W['uniacid'];
+        $list=pdo_fetchall("select * from ".tablename("krp_package_winlist")." where uniacid=:uniacid order by time desc limit 1,10",array(':uniacid'=>$uniacid));
+
+        echo json_encode($list);
     }
 
 }
