@@ -1,0 +1,346 @@
+@import './mix.less';
+.bg{
+	.size(100%;100%);
+	background: url("@{img}/index_xian.png") center no-repeat;
+	
+}
+#start{
+  transition: top 1s;
+  -webkit-transiton:top 1s;
+}
+#logo,.box,#btn,.des{
+	position: absolute;
+	.ab-center();
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.des{
+	background-image:url("@{img}/index_p.png");
+	.size(100%;695px);
+	z-index: 99;
+	background-position: top;
+}
+#logo{
+	background-image:url("@{img}/index_logo.png");
+	.size(271px;65px);
+	top:77px;
+}
+
+.box{
+	background-image:url("@{img}/index_yuan.png");
+	top:210px;
+	.size(637px;637px);
+	animation:tada 0.8s ;
+}
+
+#box-top{
+	background-image:url("@{img}/index_ding.png");
+	.size(453px;209px);
+	/*margin-top: 228px;*/
+	transform: translateY(230px);
+  -webkit-transform: translateY(230px);
+	animation: bounceInUp 0.4s 1s forwards;
+   -webkit-animation: bounceInUp 0.4s 1s forwards;
+}
+
+#slogan{
+	opacity: 0;
+	margin-top: -50px;
+	background-image:url("@{img}/index_wenzi.png");
+	.size(499px;273px);
+	
+}
+.on{
+	/*opacity: 1!important;*/
+	animation: zoomIn 0.5s 1s forwards;
+}
+
+#btn{
+	background-image:url("@{img}/index_start.png");
+	.size(257px;72px);
+	bottom: 150px;
+}
+
+@-webkit-keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 360px, 0);
+    transform: translate3d(0, 360px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -58px, 0);
+    transform: translate3d(0, -58px, 0);
+  }
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 360px, 0);
+    transform: translate3d(0, 360px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, -58px, 0);
+    transform: translate3d(0, -58px, 0);
+  }
+}
+
+
+
+//全景页面
+
+.vr_btn{
+  display: block;
+  position: absolute;
+  .size(80px;80px);
+  background-size: contain;
+  top:20px;
+  p{
+    font-size:28px;
+    text-align: center;
+    margin-top: 80px;
+  }
+}
+
+.user_btn,.music_btn{
+  right: 20px;
+}
+.user_btn{
+  border-radius: 1px;
+  border:2px solid red;
+  border-radius: 50%;
+  overflow:hidden;
+}
+.rule_btn{
+  background-image: url('../img/guize.png');
+  left: 20px;
+  
+}
+.top_btn{
+  background-image: url('../img/paiming.png');
+  left: 20px;
+  top:160px; 
+}
+.music_btn{
+  background-image: url('../img/yinyue.png');
+  top:160px;
+}
+
+#mask{
+  position: absolute;
+  .size(100%;100%);
+  background: rgba(0,0,0,.76);
+  padding: 20px;
+}
+#close{
+  position: absolute;
+  .size(56px;56px);
+  background: url('../img/close.png');
+  .ab-center;
+  bottom: 80px;
+}
+.rule_wrap{
+  .size(90%;850px);
+  top:50%;
+  margin-top: -480px;
+  background: #fff;
+  border: 10px solid #e8332b;
+  border-radius: 25px;
+  .ab-center;
+  padding: 15px 30px;
+  font-size: 22px;
+  li{
+    margin-bottom: 2px;
+    list-style: none;
+  }
+  h2{color: #e8332b;}
+  h1{
+    color: #e8332b;
+     width: 60%;
+     position: relative;
+    .center-block();
+    &:after,&:before{
+      position:absolute;
+      content: '';
+      background: #e8332b;
+      .size(50px;5px);
+      top:30px;
+    };
+    &:after{
+      right:-10px;
+    };
+    &:before{
+      left: -10px;
+    };
+  }
+}
+
+
+/*个人*/
+ .card-header,.card-footer{
+      padding: 1rem .75rem;
+      font-size: 24px;
+    }
+    .card-content-inner{
+    padding: 1.8rem
+  }
+.card-content-inner{
+  font-size: 26px;
+}
+#user{
+  margin-top:20%; 
+  /*border: 2px solid blue;*/
+  .card{
+    background: #e8332b;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 15px;
+    
+  }
+  
+  .user_info{
+     margin:40px auto 20px;
+     .user_name{
+        font-size: 24px;
+        color: #fff;
+     }
+
+  }
+  .user_photo{
+    .size(120px;120px);
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .bounceOutLeft {
+        -webkit-animation: fadeOutLeft 1s forwards;
+        animation: fadeOutLeft 1s forwards;
+  }
+}
+
+
+
+/*表单部分*/
+ .register{
+  position: absolute;
+  top: -10px;
+  overflow: hidden;
+  animation: bounceInDown 1s forwards;
+  -webkit-animation: bounceInDown 1s forwards;
+  .size(100%;600px);
+     .card-header{
+       color:#fff; 
+       background: #e8332b;
+      }
+      .card-header{
+         padding: 1.5rem
+      }
+      .card-content-inner{
+         padding: 0.8rem
+       }
+       .item-content{
+         font-size: 26px;
+         input{
+            font-size: 26px;
+         }
+       }
+   }
+   
+.error{
+  .size(45px;25px);
+  line-height: 25px;
+  background: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  display: none;
+}
+
+#prize{
+   background: url('../img/prize.png');
+   position: absolute;
+   top:50%;
+   .ab-center();
+   margin-top: -318px;
+   .size(597px;635px);
+   padding-top: 34px;
+   p{margin-bottom: 15px;}
+   .prize_wrap{
+      padding-left: 30px;
+      text-align: center;
+      font-size: 26px;
+      .size(345px;184px)
+   }
+}
+
+#prize_btn{
+  background:url('../img/prize_btn.png');
+  .size(173px;48px);
+}
+
+#share{
+  .size(232px;99px);
+   background:url('../img/share.png');
+   position: absolute;
+   top:-180px;
+   right: 40px;
+}
+
+.bar-tab{
+  height: 5rem;
+  padding-top: 0.4rem
+}
+.back{
+   .size(179px;50px);
+   background:url('../img/back.png');
+   border: none;
+}
+
+iframe{
+  display: block;
+  .size(100%;100%)
+}

@@ -207,26 +207,133 @@ class Krp_packageModuleSite extends WeModuleSite
         return $this->column_str($key) . $columnnum;
     }
 
-    public function doMobileIndex()
+    public function doMobileCover(){
+        global $_W;
+        $url=$_W['siteroot'] .'addons/krp_package/app/dist/view?i='.$_W['uniacid'];
+        header("location:".$url);
+    }
+
+    public function doMobileGetsetting()
     {
         global $_W;
         $uniacid = $_W['uniacid'];
         $set=pdo_get('krp_package_set',array('uniacid'=>$uniacid));
+        $time=time();
+        $user=pdo_get('krp_package_user',array('openid'=>$_W['openid']));
+        if($user==''){
+            if (empty($_W['fans']['nickname'])||empty($_W['fans']['nickname']['nickname'])) {
+                mc_oauth_userinfo();
+            }
+            $data=array(
+                'openid'=>$_W['openid'],
+                'nickname'=>$_W['fans']['tag']['nickname'],
+                'headimgurl'=>$_W['fans']['tag']['avatar']
+            );
+            pdo_insert('krp_package_user',$data);
+            $user=pdo_get('krp_package_user',array('openid'=>$_W['openid']));
+        }
+        $now0=mktime(0,0,0,date("m"),date("d"),date("Y"));
+        $tom0=$now0+24*60*60*1000;
+        $frequency=pdo_fetchcolumn("SELECT count(*) FROM ".tablename()." where time >= $now0 and time < $tom0");
 
-        include $this->template("index");
+        $isplay=0;
+
+        if($set['starttime']>$time){
+            $info="活动未开始！";
+        }elseif($set['endtime']<$time){
+            $info="活动已结束！";
+        }elseif($frequency>=$set['opportunity']){
+            $info="已达到当天最大获奖次数！";
+        }else{
+            $isplay=1;
+        }
+        $set['isplay']=$isplay;
+        $set['info']=$info;
+        if($user['tel']==''){
+            $set['isreg']=0;
+        }else{
+            $set['isreg']=1;
+        }
+        $set['nickname']=$user['nickname'];
+        $set['headimgurl']=tomedia($user['nickname']);
+
+        echo json_encode($set);
     }
 
     public function doMobilePlay()
     {
-        global $_GPC;
-        echo 'index';
+        global $_W,$_GPC;
+        $uniacid = $_W['uniacid'];
+
+        $set=pdo_get('krp_package_set',array('uniacid'=>$uniacid));
+        $now0=mktime(0,0,0,date("m"),date("d"),date("Y"));
+        $tom0=$now0+24*60*60*1000;
+        $time=time();
+        $frequency=pdo_fetchcolumn("SELECT count(*) FROM ".tablename()." where time >= $now0 and time < $tom0");
+        if($set['starttime']>$time||$set['endtime']<$time||$frequency>=$set['opportunity']){
+            echo json_encode(array(
+                'name' =>'网络错误',
+                'goodimgurl'=>' '
+            ));die;
+        }
+
+        $user=pdo_get('krp_package_user',array('uniacid'=>$uniacid));
+        $t_num=rand(0,100);
+        $goods=pdo_getall('krp_package_good',array('uniacid'=>$uniacid));
+        $cumulative=0;
+        foreach($goods as $v){
+            $min_num=0+$cumulative;
+            $max_num=$v['probability']+$cumulative;
+            if($t_num>=$min_num||$t_num<$max_num){
+                $goodid=$v['id'];
+                $good=$v;
+                break;
+            }
+            $cumulative=$max_num;
+        }
+
+        $data=array(
+            'uniacid'=>$uniacid,
+            'userid'=>$user['id'],
+            'goodid'=>$goodid,
+            'time'=>time()
+        );
+        pdo_insert('krp_package_winlist',$data);
+
+        echo json_encode(array(
+            'name' =>$good['name'],
+            'goodimgurl'=>tomedia($good['imgurl'])
+        ));
+    }
+
+    public function doMobileReginfo(){
+        global $_W,$_GPC;
+        $data=array(
+            'tel'=>$_GPC['tel'],
+            'name'=>$_GPC['name']
+        );
+        pdo_update('krp_package_user',$data,array('openid'=>$_W['openid']));
+        echo 1;
     }
 
     public function doMobileWinlist()
     {
+//        header("Content-Type: text/html; charset=UTF-8");
+//        header('Access-Control-Allow-Origin:*');
+//        header('Access-Control-Allow-Methods:POST');
+//        header('Access-Control-Allow-Headers:x-requested-with,content-type');
         global $_W;
         $uniacid = $_W['uniacid'];
         $list=pdo_fetchall("select * from ".tablename("krp_package_winlist")." where uniacid=:uniacid order by time desc limit 1,10",array(':uniacid'=>$uniacid));
+        foreach($list as &$v){
+            $userinfo=pdo_get('krp_package_user',array('id'=>$v['userid']));
+            $goodinfo=pdo_get('krp_package_good',array('id'=>$v['goodid']));
+            $v['nickname']=$userinfo['nickname'];
+            $v['headimgurl']=tomedia($userinfo['headimgurl']);
+            $v['goodimgurl']=tomedia($goodinfo['imgurl']);
+            $v['time']=date('Y-m-d H:i:s',$v['time']);
+        }
+        unset($v);
 
         echo json_encode($list);
     }

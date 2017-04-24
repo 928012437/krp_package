@@ -1,0 +1,37 @@
+@import  './less/variables.less';
+@import './less/mixins.less';
+
+/*url("@{img}/slogan.png");*/
+@img:"../img"; 
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ab-center(){
+  .center-block();
+  left:0;
+  right: 0;
+}
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+  box-shadow: @shadow;
+}
+
+.flex(@columns: 1) {
+  -webkit-box-flex: @columns; // Old syntax
+  -webkit-flex: @columns;
+  -moz-flex: @columns;
+  -ms-flex: @columns;
+  flex: @columns;
+}
+
+.img-responsive(@display: block) {
+  display: @display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}

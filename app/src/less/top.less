@@ -1,0 +1,122 @@
+@import './mix.less';
+
+.content{
+  /*border:6px solid blue;*/
+}
+.top{ 
+  background: transparent;
+  .phb{
+     background: url("../img/top_1.png") center no-repeat;
+    .size(540px,120px);
+    .center-block;
+    position: relative;
+    z-index: 9;
+  }
+  
+}
+.bar:after{
+  background-color: transparent!important;
+}
+.width{
+  /*.size(591px,166px);*/
+  .center-block;
+
+}
+.wrap{
+    position: relative;
+    background: #dfdfdf;
+    top:140px!important;
+    min-height: 900px;
+  
+    .border-bottom-radius(18px);
+    padding: 20px 15px;
+    .content{
+      height: auto;
+      background: transparent;
+      padding: 14px 15px;
+        li{
+           .size(100%,84px);
+         background: #fef8eb;
+            padding:0;
+            border: 1px solid #ddd;
+            margin-bottom: 0px;
+            border-radius: 8px;
+            .flex;
+        }
+    }
+    .user{
+    position: fixed;
+    top: 140px;
+    z-index: 99;
+    width: 100%;
+   color: #fff!important;
+   padding: 15px;
+   background: #e8382e;;
+    .flex;
+    /*padding: 0 55px 0 32px;*/
+    .img{
+      .img-wrap{
+        .size(104px,104px)
+      }
+      .name{
+        margin-top: 32px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.flex{
+  .flexbox();
+  .justify-content(space-between);
+  .align-items(center);
+  /*padding: 0 50px 0 35px;*/
+  padding-left: 30px;
+  font-size: 30px;
+  color: #c65416;
+  .score{
+    width:40%;
+    text-align: center;
+    time{
+    	font-size: 18px;
+    	display: block;	
+    }
+  }
+   .name{
+   	text-align: center;
+   	 margin-top:8PX; 
+     margin-bottom: 5px;
+     overflow: hidden;
+     font-size: 26px;
+     .text-overflow();
+     height:30px;
+    }
+  .placing{
+  	text-align: center;
+    width: 40%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e4372c;
+    line-height: 60px;
+    height: 60px;
+    text-align: center;
+    /*border:1px solid red;*/
+  }
+  .img{
+    .clearfix;
+    width: 25%;
+  }
+  .img-wrap{
+    display: inline-block;
+    border-radius: 50%;
+   margin-top: 12px;
+    .size(70px,70px);
+    border:2px solid @color-primary;
+    overflow: hidden;
+    img{
+      display: block;
+      .size(100%,100%);
+    }
+  }
+}
+

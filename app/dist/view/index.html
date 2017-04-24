@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
+	 <meta name="viewport" content="width=640,target-densitydpi=device-width,user-scalable=no">
+	<title>	</title>
+	<link href="../style/vendors.css?4ffef056dfb0ad4bcfda" rel="stylesheet"><link href="../style/index.css?4ffef056dfb0ad4bcfda" rel="stylesheet">
+	<script type="text/javascript" src="../js/vendors.js?4ffef056dfb0ad4bcfda"></script><script type="text/javascript" src="../js/index.js?4ffef056dfb0ad4bcfda"></script>
+	<script>
+		uniacid=getPar('i');
+		uniacid=uniacid.replace(/[^0-9]/ig,"");
+				urlstr="http://w.xghd.cc/app/index.php?i="+uniacid+"&c=entry&m=krp_package&do=";
+//		urlstr="http://127.0.0.1/weengine/app/index.php?i="+uniacid+"&c=entry&m=krp_package&do=";
+		function getPar(par){
+			//获取当前URL
+			var local_url = document.location.href;
+			//获取要取得的get参数位置
+			var get = local_url.indexOf(par +"=");
+			if(get == -1){
+				return false;
+			}
+			//截取字符串
+			var get_par = local_url.slice(par.length + get + 1);
+			//判断截取后的字符串是否还有其他get参数
+			var nextPar = get_par.indexOf("&");
+			if(nextPar != -1){
+				get_par = get_par.slice(0, nextPar);
+			}
+			return get_par;
+		}
+
+		window.onload= function(){
+			var url =urlstr+'getsetting';
+//			var url ='test.php';
+					$.get(url,function(data){
+						data=eval("("+data+")");
+						var $body = $('body');
+						document.title = data.actname;
+						var $iframe = $('<iframe src=""></iframe>');
+						$iframe.on('load',function() {
+							setTimeout(function() {
+								$iframe.off('load').remove();
+							}, 0);
+						}).appendTo($body);
+						$("#nickname").html(data.nickname);
+						$("#headimgurl").attr('src',data.headimgurl);
+						$("#prompttext").html(data.info);
+						window.krpano1.krpset(data.roundmin,data.roundmax);
+						snum=1;
+						oknum=data.okgoodnum;
+						isplay=data.isplay;
+						isreg=data.isreg;
+					});
+		};
+
+		function goodapp(){
+
+			if(isplay==1){
+				if(snum==oknum){
+					var url=urlstr+"play";
+//					var url="play.php";
+					$.get(url,function(data2){
+						data2=eval("("+data2+")");
+						$("#goodname").html(data2.name);
+						$("#mask").show();
+						$("#prize").show();
+					});
+				}else {
+					$("#mask").show();
+					$("#prompttext").html("未中奖！");
+					$("#prompt").show();
+				}
+				snum++;
+			}else {
+				$("#mask").show();
+				$("#prompt").show();
+			}
+
+		}
+
+		function chosereg(){
+			$(".register").show();
+			if(isreg==1){
+				$("#reg1").show();
+			}else {
+				$("#reg0").show();
+			}
+		}
+
+		function reginfo(){
+			var name=$("#userName").val();
+			var tel=$("#phone").val();
+			var url=urlstr+"reginfo&name="+name+"&tel="+tel;
+			$.get(url,function(d){
+				if(d==1){
+					alert('注册成功');
+				}else {
+					alert('网络错误');
+				}
+				$("#mask").hide();
+				$("#prize").hide();
+				$("#reg0").hide();
+				$(".register").hide();
+			})
+		}
+
+		function hidegoodapp(){
+			$("#mask").hide();
+			$("#prize").hide();
+			$("#reg1").hide();
+			$(".register").hide();
+		}
+
+	</script>
+</head>
+<body>
+
+<div class="page" id='start' style="display: none;">
+<div class="bg">
+	<div class="content">
+		<div class="des"></div>
+		<div id="logo"></div>
+		<div class="box">
+			<div id="box-top" class="center-block"></div>
+			<div id="slogan" class="center-block" ></div>
+		</div>
+		<a href="javascript:;" id="btn" ></a>
+	</div>
+</div>
+</div>
+<div class="page" id="vr" style="display:block;">
+	<div class="content">		
+		<a class="vr_btn top_btn" href="javascript:">
+			<p>排行</p>
+		</a>		
+		<a class="vr_btn rule_btn">
+			<p>规则</p>
+		</a>			
+		<a class="vr_btn music_btn">
+			<p>音乐</p>
+		</a>
+		<a class="vr_btn user_btn">
+			<img src="../imgs/jiangpin-1a633140490a552cc3fae8aa15836190.png" alt="" class="img-responsive">
+		</a>
+       <iframe id="krpano1" name="krpano1" src="http://127.0.0.1:8080/krptest2/vtour/" frameborder="0"></iframe>
+	<div id="mask" style="display: none;">
+
+		<div class="card max_wrap" id="prompt" style="border-radius: 10px;overflow: hidden;display: none" >
+			<div class="card-header" style="background:#e8332b;color:#fff">
+				<div class="center-block">提示</div>
+			</div>
+			<div class="card-content" >
+				<div class="card-content-inner text-center" id="prompttext" style="height: 140px;line-height: 80px;">
+
+				</div>
+			</div>
+
+		</div>
+			
+			<!-- 游戏规则 -->
+			 <div class="content rule_wrap" id="rule" style="display: none;">
+			 	<h1 class="text-center">活动规则</h1>
+			 	<ul>
+			 		<li>1.寻找场景内的红包，打开红包随机获得奖品。</li>
+			 		<li>2.每人每天自动一次获奖机会，获得奖品后需按照引导分享至朋友圈后方可领取。</li>
+			 		<li>3.兑换礼品时每人仅可在已获得奖品中选择一款兑换。</li>
+			 		<li>4.在指定时间内至线下兑奖时需出示转发朋友圈记录方可
+						领取所获奖品。</li>
+			 		<li>5.本活动奖品数量有限，兑换奖品时将按照先到先得原则
+						进行发放。</li>
+			 		<li>6.本活动最终解释权归印象齐都所有。</li>
+			 	</ul>
+				<h2>活动时间</h2>
+  				<p>2017年4月15-2017年4月16</p>
+				<h2 class="">活动奖品</h2>
+				<ul>
+					<li>1.万元加油卡 随机获得500元-50元加油卡，共计200张</li>
+					<li>2.价值100元泰山原浆啤酒一件</li>
+					<li>3.价值60元博物馆门票一张</li>
+					<li>4.价值30元大米一袋</li>
+					<li>5.幸运奖</li>
+				</ul>
+			 </div>
+
+			<!-- 玩家个人信息 -->
+			 <div id="user" style="display: none;">
+					<div class="user_info">
+				 		<div class="center-block user_photo">
+				 			<img id="headimgurl" src="" alt="" class="img-responsive">
+				 		</div>
+				 		<p id="nickname" class="text-center user_name"></p>
+			 		</div>
+			 		<!--<div class="card prize_info">-->
+				 	    <!--<div class="card-header ">-->
+				 	    	<!--<div class="center-block">获得奖品</div>-->
+				 	    <!--</div>-->
+				 	    <!--<div class="card-content">-->
+				 	      <!--<div class="card-content-inner">头和尾的卡片。卡头是用来显示一些额外的信息，或自定义操作卡标题和页脚。</div>-->
+				 	    <!--</div>-->
+				 	    <!--<div class="card-footer">-->
+				 	    	<!--<button class="prize_btn center-block">领取奖品</button>-->
+				 	    <!--</div>-->
+			 	  <!--</div>-->
+			 </div>
+
+
+			<!-- 奖品 -->
+			 <div id="prize" style="display: none;">
+			 	<div id="share"></div>
+			 	<div class="prize_wrap center-block">
+			 		<p id="goodname" ></p>
+			 		<a href="javascript:" id="prize_btn" onclick="chosereg()" class="center-block"></a>
+			 	</div>
+			 			<div class="register" style="display: none;">
+			 				<!-- <div class="reg_top">填写信息领取奖品</div> -->
+			 			
+					 	  	<div class="card " id="reg0" style="display: none;">
+						 	    <div class="card-header ">
+						 	    	<div class="center-block">获得奖品</div>
+						 	    </div>
+						 	    <div class="card-content">
+						 	      <div class="card-content-inner">
+						 	      	<form action="" method="">
+								 	  	<div class="list-block">
+								 	  	    <ul>
+								 	  	      <!-- Text inputs -->
+								 	  	      <li>
+								 	  	        <div class="item-content">
+								 	  	          <div class="item-media"><i class="icon icon-form-name"></i></div>
+								 	  	          <div class="item-inner">
+								 	  	            <div class="item-title label">姓　名</div>
+								 	  	            <div class="item-input">
+								 	  	         <input type="text" placeholder="请输入您的姓名" id="userName">
+								 	  	            </div>
+
+								 	  	          </div>
+								 	  	        </div>
+								 	  	      </li>
+								 	  	       <li>
+								 	  	        <div class="item-content">
+								 	  	          <div class="item-media"><i class="icon icon-form-name"></i></div>
+								 	  	          <div class="item-inner">
+								 	  	            <div class="item-title label">手机号</div>
+								 	  	            <div class="item-input">
+								 	  	              <input type="text" placeholder="请输入正确的手机号" name='phone' id="phone">
+								 	  	            </div>
+								 	  	             <div class="error" >×</div>
+								 	  	          </div>
+								 	  	        </div>
+								 	  	      </li>
+								 	  	      </ul>
+								 	  	 </div>
+								 	  </form>
+						 	      </div>
+						 	    </div>
+						 	    <div class="card-footer">
+						 	    	<button class="center-block register_btn" onclick='reginfo()'>领取奖品</button>
+						 	    </div>
+					 	  	</div>
+							 		<div class="card prize_info" id="reg1" style="display: none;">
+								 	    <div class="card-header ">
+								 	    	<div class="center-block">获得奖品</div>
+								 	    </div>
+								 	    <div class="card-content">
+								 	      <div class="card-content-inner text-center">
+								 	      	奖品添加到个人中心
+								 	      </div>
+								 	    </div>
+								 	    <div class="card-footer">
+								 	    	<button class="prize_btn center-block" onclick='hidegoodapp()' >确　定</button>
+								 	    </div>
+							 	  </div>
+
+				 	  </div>
+
+
+			 </div>
+
+			 <!-- 关闭按钮 -->
+			 <div id="close"></div>
+		</div>
+	</div>
+</div>
+
+<!-- 排行榜 -->
+<div class="page" id="top" style="display:none;">
+  <header class="bar bar-nav top">
+   		<div class="phb"></div>
+  </header>
+
+  <div class="wrap width" >
+	  <!--  <div class="user width ">
+	      <div class="text-center">当前已有<span>369421</span>人参加了活动</div>
+	   </div> -->
+
+    <div class="content" style="margin-top: 10px;" >
+    
+    <!-- <div id='wrapper' style="height: 300px;overflow: hidden;"> -->
+      <ul id="winlist">
+
+        <li>
+          <div class="img">
+              <i class="img-wrap pull-left">
+                <img src="" alt=""/>
+              </i>           
+          </div>
+          <div class="score">
+            	<p class="name">***</p>
+			    <time>***</time>
+          </div>
+          <div class="placing">
+              ***
+          </div>
+        </li>
+
+      </ul>
+    <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="bar bar-tab">
+       <button class="center-block back" id='back'></button>
+  </div>
+
+  <!-- <div class="mask mask-share" style="display: block">
+          <div class="share">
+          </div>
+    <button type="button" class="share-btn"></button>
+  </div> -->
+</div>
+
+
+</body>
+</html>

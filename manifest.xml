@@ -46,7 +46,7 @@
 	</platform>
 	<bindings>
 		<cover>
-			<entry title="活动入口" do="index" />
+			<entry title="活动入口" do="cover" />
 		</cover>
 		<menu>
 			<entry title="活动设置" do="mysetting" />
@@ -57,7 +57,58 @@
 	</bindings>
 	<permissions>
 	</permissions>
-	<install><![CDATA[]]></install>
+	<install><![CDATA[
+	CREATE TABLE `ims_krp_package_good` (
+  `id` int(10) NOT NULL,
+  `uniacid` int(10) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `kucun` int(10) NOT NULL,
+  `probability` int(10) NOT NULL,
+  `imgurl` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `ims_krp_package_set` (
+  `id` int(10) NOT NULL,
+  `uniacid` int(10) NOT NULL,
+  `actname` varchar(20) NOT NULL,
+  `starttime` int(20) NOT NULL,
+  `endtime` int(20) NOT NULL,
+  `opportunity` int(10) NOT NULL,
+  `roundmin` int(10) NOT NULL,
+  `roundmax` int(10) NOT NULL,
+  `okgoodnum` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `ims_krp_package_user` (
+  `id` int(10) NOT NULL,
+  `uniacid` int(10) NOT NULL,
+  `openid` varchar(32) NOT NULL,
+  `tel` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `nickname` varchar(20) NOT NULL,
+  `headimgurl` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `ims_krp_package_winlist` (
+  `id` int(10) NOT NULL,
+  `userid` int(10) NOT NULL,
+  `uniacid` int(10) NOT NULL,
+  `goodid` int(10) NOT NULL,
+  `time` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `ims_krp_package_good`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `ims_krp_package_set`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `ims_krp_package_user`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `ims_krp_package_winlist`
+  ADD PRIMARY KEY (`id`);
+	]]></install>
 	<uninstall><![CDATA[]]></uninstall>
 	<upgrade><![CDATA[]]></upgrade>
 </manifest>
