@@ -225,6 +225,7 @@ class Krp_packageModuleSite extends WeModuleSite
                 mc_oauth_userinfo();
             }
             $data=array(
+                'uniacid'=>$uniacid,
                 'openid'=>$_W['openid'],
                 'nickname'=>$_W['fans']['tag']['nickname'],
                 'headimgurl'=>$_W['fans']['tag']['avatar']
@@ -234,7 +235,7 @@ class Krp_packageModuleSite extends WeModuleSite
         }
         $now0=mktime(0,0,0,date("m"),date("d"),date("Y"));
         $tom0=$now0+24*60*60*1000;
-        $frequency=pdo_fetchcolumn("SELECT count(*) FROM ".tablename()." where time >= $now0 and time < $tom0");
+        $frequency=pdo_fetchcolumn("SELECT count(*) FROM ".tablename('krp_package_winlist')." where time >= $now0 and time < $tom0");
 
         $isplay=0;
 
@@ -269,7 +270,7 @@ class Krp_packageModuleSite extends WeModuleSite
         $now0=mktime(0,0,0,date("m"),date("d"),date("Y"));
         $tom0=$now0+24*60*60*1000;
         $time=time();
-        $frequency=pdo_fetchcolumn("SELECT count(*) FROM ".tablename()." where time >= $now0 and time < $tom0");
+        $frequency=pdo_fetchcolumn("SELECT count(*) FROM ".tablename('krp_package_winlist')." where time >= $now0 and time < $tom0");
         if($set['starttime']>$time||$set['endtime']<$time||$frequency>=$set['opportunity']){
             echo json_encode(array(
                 'name' =>'网络错误',
@@ -277,7 +278,7 @@ class Krp_packageModuleSite extends WeModuleSite
             ));die;
         }
 
-        $user=pdo_get('krp_package_user',array('uniacid'=>$uniacid));
+        $user=pdo_get('krp_package_user',array('openid'=>$_W['openid']));
         $t_num=rand(0,100);
         $goods=pdo_getall('krp_package_good',array('uniacid'=>$uniacid));
         $cumulative=0;
@@ -324,13 +325,14 @@ class Krp_packageModuleSite extends WeModuleSite
 //        header('Access-Control-Allow-Headers:x-requested-with,content-type');
         global $_W;
         $uniacid = $_W['uniacid'];
-        $list=pdo_fetchall("select * from ".tablename("krp_package_winlist")." where uniacid=:uniacid order by time desc limit 1,10",array(':uniacid'=>$uniacid));
+        $list=pdo_fetchall("select * from ".tablename("krp_package_winlist")." where uniacid=:uniacid order by `time` desc limit 0,10",array(':uniacid'=>$uniacid));
         foreach($list as &$v){
             $userinfo=pdo_get('krp_package_user',array('id'=>$v['userid']));
             $goodinfo=pdo_get('krp_package_good',array('id'=>$v['goodid']));
             $v['nickname']=$userinfo['nickname'];
             $v['headimgurl']=tomedia($userinfo['headimgurl']);
-            $v['goodimgurl']=tomedia($goodinfo['imgurl']);
+            $v['goodname']=$goodinfo['name'];
+//            $v['goodimgurl']=tomedia($goodinfo['imgurl']);
             $v['time']=date('Y-m-d H:i:s',$v['time']);
         }
         unset($v);

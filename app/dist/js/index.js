@@ -49,9 +49,10 @@ $(function () {
 		$.get(url,function(data){
 			var str="";
 			data=eval("("+data+")");
-			data.forEach(v){
+			console.log(data);
+			data.forEach(function(v){
 				str+='<li><div class="img"><i class="img-wrap pull-left"><img src="'+ v.headimgurl+'" alt="'+ v.nickname+'"/></i></div><div class="score"><p class="name">'+ v.nickname+'</p><time>'+ v.time+'</time></div><div class="placing">'+ v.goodname+'</div></li>';
-			}
+			});
 			$("#winlist").html(str);
 		});
 		top.show();
@@ -71,7 +72,7 @@ $(function () {
 		mask.show();
 		user.show();
 
-		console.log('sssss');
+		//console.log('sssss');
 	});
 
 
